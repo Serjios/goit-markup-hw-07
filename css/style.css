@@ -1,3 +1,8 @@
+:root {
+  --font-moncerrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
 /* MAIN */
 html {
   box-sizing: border-box;
@@ -7,8 +12,43 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: var(--font-moncerrat);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero {
+  /* background-color: #1a1915; */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+}
+
+.nav-list a {
+  text-decoration: none;
+}
+
 /* MOBILE */
 @media screen and (max-width: 747px) {
+  .hero {
+    /* max-width: 320px; */
+    height: 540px;
+    background-image: url("../images/Hero_mobile.png");
+  }
+
+  .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
 }
 
 /* TABLET */
